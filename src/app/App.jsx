@@ -1,3 +1,9 @@
 export default function App() {
-  return "initializing app and remote repository";
+  return (
+    <ul>
+      <li>initializing app and remote repository.</li>
+      <li>install core dependencies</li>
+    </ul>
+  );
+  return;
 }
