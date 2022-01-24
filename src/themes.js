@@ -3,10 +3,10 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export const WelcomeTheme = createMuiTheme({
   palette: {
     primary: {
-      main: "#46ACC3",
+      main: "#489bb5",
     },
     secondary: {
-      main: "#74C1D2",
+      main: "#489bb5",
     },
   },
   typography: {
@@ -37,10 +37,10 @@ export const MyProfileTheme = createMuiTheme({
 export const MyClassroomTheme = createMuiTheme({
   palette: {
     primary: {
-      main: "#46ACC3",
+      main: "#489bb5",
     },
     secondary: {
-      main: "#74C1D2",
+      main: "#489bb5",
     },
   },
   typography: {
@@ -54,27 +54,10 @@ export const MyClassroomTheme = createMuiTheme({
 export const MyContentTheme = createMuiTheme({
   palette: {
     primary: {
-      main: "#E2973C",
+      main: "#b77b6e",
     },
     secondary: {
-      main: "#EAB371",
-    },
-  },
-  typography: {
-    fontFamily: "Lato",
-    button: {
-      fontSize: "0.8rem",
-    },
-  },
-});
-
-export const CommunityTheme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#6cb244",
-    },
-    secondary: {
-      main: "#6cb244",
+      main: "#f9efed",
     },
   },
   typography: {

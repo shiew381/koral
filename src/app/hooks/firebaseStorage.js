@@ -69,7 +69,7 @@ export default function useStorage(
           const updatedQs = updateQuestions(fileInfo, question, questions);
           firestoreRef.update({ questions: updatedQs });
         }
-        // create firestore reference for solution file uploaded to my_library or products collection
+        // create firestore reference for solution file uploaded to my_library or libraries collection
         else if (category === "solution") {
           firestoreRef.update({ solution: fileInfo });
         }
@@ -78,7 +78,7 @@ export default function useStorage(
           const updatedQs = updateAuxFiles(fileInfo, questions, question);
           firestoreRef.update({ questions: updatedQs });
         }
-        // create firestore reference for auxillary files uploaded to my_library or products collection
+        // create firestore reference for auxillary files uploaded to my_library or libraries collection
         else if (category === "auxillaryFile") {
           firestoreRef.update({
             auxillaryFiles: firebase.firestore.FieldValue.arrayUnion(fileInfo),

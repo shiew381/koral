@@ -12,14 +12,14 @@ export const handleImageUploadBefore = async (
   info,
   uploadHandler,
   userID,
-  productLibraryID
+  libraryID
 ) => {
   let imgName = files[0].name;
   let imgSize = files[0].size;
   let storagePath = "";
 
-  storagePath = productLibraryID
-    ? `${process.env.REACT_APP_PRODUCT_COLLECTION}/${productLibraryID}/questions/${files[0].name}`
+  storagePath = libraryID
+    ? `libraries/${libraryID}/questions/${files[0].name}`
     : `users/${userID}/questions/${files[0].name}`;
 
   const storageRef = firebase.storage().ref().child(storagePath);
@@ -356,18 +356,3 @@ export const Eraser = ({ strokeColor }) => (
     </svg>
   </SvgIcon>
 );
-
-export function arcTan(dx, dy) {
-  if (dx > 0 && dy > 0) return Math.atan(dy / dx);
-  if (dx < 0 && dy > 0) return Math.atan(dy / dx) + Math.PI;
-  if (dx < 0 && dy < 0) return Math.atan(dy / dx) + Math.PI;
-  if (dx > 0 && dy < 0) return Math.atan(dy / dx) + 2 * Math.PI;
-  if (dx > 0 && dy === 0) return 0;
-  if (dx < 0 && dy === 0) return Math.PI;
-  if (dx === 0 && dy > 0) return 0.5 * Math.PI;
-  if (dx === 0 && dy < 0) return 1.5 * Math.PI;
-}
-
-export function distance(a, b) {
-  return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
-}

@@ -282,59 +282,55 @@ export async function addReportProblem(values) {
 }
 
 export function addNewLibrary(libraryInfo) {
-  const ref = firebase
-    .firestore()
-    .collection(process.env.REACT_APP_PRODUCT_COLLECTION);
+  const ref = firebase.firestore().collection("libraries");
   ref.add(libraryInfo);
 }
 
-export function addQuestionToProductLibrary(question, productLibraryID) {
-  const productLibraryInfoRef = firebase
+export function addQuestionToLibrary(question, libraryID) {
+  const libraryInfoRef = firebase
     .firestore()
-    .collection(process.env.REACT_APP_PRODUCT_COLLECTION)
-    .doc(productLibraryID);
+    .collection("libraries")
+    .doc(libraryID);
 
-  const productLibraryRef = productLibraryInfoRef.collection("questions");
+  const libraryRef = libraryInfoRef.collection("questions");
 
-  productLibraryRef
+  libraryRef
     .add(question)
-    .then((docRef) =>
-      productLibraryRef.doc(docRef.id).update({ id: docRef.id })
-    )
+    .then((docRef) => libraryRef.doc(docRef.id).update({ id: docRef.id }))
     .then(() => {
-      productLibraryInfoRef.update({
+      libraryInfoRef.update({
         questionCount: firebase.firestore.FieldValue.increment(1),
       });
     });
 }
 
-export function updateQuestionInProductLibrary(
-  productLibraryID,
+export function updateQuestionInLibrary(
+  libraryID,
   libraryQuestionID,
   editedQuestion
 ) {
   const ref = firebase
     .firestore()
-    .collection(process.env.REACT_APP_PRODUCT_COLLECTION)
-    .doc(productLibraryID)
+    .collection("libraries")
+    .doc(libraryID)
     .collection("questions")
     .doc(libraryQuestionID);
 
   ref.update(editedQuestion);
 }
 
-export function deleteQuestionFromProductLibrary(questionID, productLibraryID) {
-  const productLibraryInfoRef = firebase
+export function deleteQuestionFromLibrary(questionID, libraryID) {
+  const libraryInfoRef = firebase
     .firestore()
-    .collection(process.env.REACT_APP_PRODUCT_COLLECTION)
-    .doc(productLibraryID);
+    .collection("libraries")
+    .doc(libraryID);
 
-  const productLibraryQuestionRef = productLibraryInfoRef
+  const libraryQuestionRef = libraryInfoRef
     .collection("questions")
     .doc(questionID);
 
-  productLibraryQuestionRef.delete().then(() =>
-    productLibraryInfoRef.update({
+  libraryQuestionRef.delete().then(() =>
+    libraryInfoRef.update({
       questionCount: firebase.firestore.FieldValue.increment(-1),
     })
   );

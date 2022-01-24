@@ -326,12 +326,12 @@ body {
 
 .hover-pointer-blue:hover {
   cursor: pointer;
-  color: #79c2d3;
+  color: #489bb5;
 }
 
-.hover-pointer-orange:hover {
+.hover-pointer-default:hover {
   cursor: pointer;
-  color: #eab371;
+  color: #895d7a;
 }
 
 .hover-pointer-gray:hover {
@@ -501,7 +501,7 @@ body {
   margin-left: 160px;
   padding-top: 15px;
   padding-left: 20px;
-  background-color: rgba(200, 200, 200, 0.3);
+  background-color: rgba(255, 255, 255, 0.75);
   overflow: auto;
 }
 
@@ -509,7 +509,7 @@ body {
   height: calc(100% - 65px);
   width: 100%;
   margin-top: 65px;
-  background-color: rgba(200, 200, 200, 0.3);
+  background-color: rgba(255, 255, 255, 0.75);
   overflow: auto;
 }
 
@@ -528,7 +528,7 @@ body {
 
 .course-view-background {
   height: 100%;
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/koi-community-development.appspot.com/o/public%2Fmy-classroom-background.png?alt=media&token=96de18f1-322b-4d99-9683-db98339fb1b7);
+  background-image: url(https://storage.googleapis.com/koral-example.appspot.com/public/clear-blue-sea-floor.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -582,16 +582,16 @@ body {
 }
 
 /* .katex .mathnormal {
-    font-style: normal;
-    font-size: 1.1rem;
-    line-height: 1.75;
-  } */
+  font-style: normal;
+  font-size: 1.1rem;
+  line-height: 1.75;
+} */
 
 /* .katex {
-    font-style: normal;
-    font-size: 1.1rem;
-    line-height: 1.75;
-  } */
+  font-style: normal;
+  font-size: 1.1rem;
+  line-height: 1.75;
+} */
 
 .course-utils-display-area {
   width: 75%;
@@ -704,8 +704,8 @@ body {
 /*================== specific my-classroom styles =================*/
 
 .my-classroom-background {
-  background-size: 100%;
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/koi-community-development.appspot.com/o/public%2Fmy-classroom-background.png?alt=media&token=96de18f1-322b-4d99-9683-db98339fb1b7);
+  background-size: cover;
+  background-image: url(https://storage.googleapis.com/koral-example.appspot.com/public/clear-blue-sea-floor.jpeg);
 }
 
 .click-to-add-course {
@@ -717,13 +717,6 @@ body {
   width: 320px;
   height: 320px;
   margin: 20px;
-}
-
-.product-card {
-  width: 320px;
-  height: 320px;
-  margin: 20px;
-  padding: 20px;
 }
 
 .instructor-label-container {
@@ -759,9 +752,9 @@ body {
 }
 
 /* .add-course-nav-buttons {
-    padding-top: 30px;
-    justify-content: space-between;
-  } */
+  padding-top: 30px;
+  justify-content: space-between;
+} */
 
 .find-course-form {
   width: 350px;
@@ -900,8 +893,8 @@ body {
 /*=================== specific my-content styles ==================*/
 
 .my-content-background {
-  background-size: 100%;
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/koi-community-development.appspot.com/o/public%2Fmy-content-background.png?alt=media&token=6caa8150-9b26-4bf8-9f5e-8e963e6c9e06);
+  background-size: cover;
+  background-image: url(https://storage.googleapis.com/koral-example.appspot.com/public/fish-anemone-color-retouched.png);
 }
 
 .library-info-fields {
@@ -1194,7 +1187,7 @@ body {
 .question-form-left-column {
   width: 420px;
   overflow: auto;
-  background-color: #faecdc;
+  background-color: #f9efed;
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -1264,13 +1257,13 @@ body {
 }
 
 .short-answer-info {
-  background-color: #faecdc;
+  background-color: #f9efed;
   padding: 15px;
   text-align: center;
 }
 
 .title-card-input-fields {
-  background-color: #faecdc;
+  background-color: #f9efed;
   height: 380px;
   padding: 20px;
 }
@@ -1288,7 +1281,7 @@ body {
 }
 
 .scoring-container {
-  background-color: #faecdc;
+  background-color: #f9efed;
   padding: 10px;
   margin-bottom: 15px;
 }
@@ -1300,7 +1293,7 @@ body {
 }
 
 .tag-generator {
-  background-color: #faecdc;
+  background-color: #f9efed;
   padding: 10px;
 }
 
@@ -1312,14 +1305,6 @@ body {
   min-height: 200px;
   min-width: 680px;
   padding-top: 150px;
-}
-
-/*=================================================================*/
-/*================= specific community styles =====================*/
-
-.community-background {
-  background-size: 100% 95%;
-  background-image: url(https://firebasestorage.googleapis.com/v0/b/koi-community-development.appspot.com/o/public%2Fcommunity-background.jpeg?alt=media&token=65f0cd5d-e2c3-4e94-bc1d-d5a444fedad1);
 }
 
 /*=================================================================*/

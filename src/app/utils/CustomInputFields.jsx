@@ -42,7 +42,7 @@ export const BodyField = (props) => (
           info,
           uploadHandler,
           props.userID,
-          props.productLibraryID
+          props.libraryID
         )
       }
       setOptions={optionsPackageA}
@@ -63,7 +63,7 @@ export const PromptField = (props) => (
           info,
           uploadHandler,
           props.userID,
-          props.productLibraryID
+          props.libraryID
         )
       }
       setOptions={optionsPackageA}
@@ -84,7 +84,7 @@ export const InfoField = (props) => (
           info,
           uploadHandler,
           props.userID,
-          props.productLibraryID
+          props.libraryID
         )
       }
       setOptions={optionsPackageA}
@@ -105,7 +105,7 @@ export const AnswerChoiceField = (props) => (
           info,
           uploadHandler,
           props.userID,
-          props.productLibraryID
+          props.libraryID
         )
       }
       setOptions={optionsPackageA}
