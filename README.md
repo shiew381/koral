@@ -1,6 +1,6 @@
 # What is Koral?
 
-Koral is a learning management system system designed for instructors to create and distribute their own educational content.
+Koral is a learning management system designed for instructors to create and distribute their own educational content.
 A live instance of this repository can be found on the web at https://koral.community
 
 # Who built Koral?
